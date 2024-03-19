@@ -1,4 +1,4 @@
---Table creation section
+
 CREATE TABLE Teaterstykke (
     StykkeID int PRIMARY KEY,
     StykkeNavn varchar(255) NOT NULL,
@@ -9,8 +9,8 @@ CREATE TABLE Teaterstykke (
 CREATE TABLE StykkeiSal (
     StykkeID int,
     TeaterSalID int,
-    FOREIGN KEY (StykkeID) REFERENCES Teaterstykke(StykkeID)
-    FOREIGN KEY (TeaterSalID) REFERENCES Teatersal(TeaterSalID)
+    FOREIGN KEY (StykkeID) REFERENCES Teaterstykke(StykkeID),
+    FOREIGN KEY (TeaterSalID) REFERENCES Teatersal(TeaterSalID),
     PRIMARY KEY (StykkeID, TeaterSalID)
 );
 
@@ -22,8 +22,8 @@ CREATE TABLE Teatersal (
 
 CREATE TABLE Forestilling (
     ForestillingID int PRIMARY KEY,
-    Dato date NOT NULL
-    Tid time NOT NULL
+    Dato date NOT NULL,
+    Tid time NOT NULL,
     TeaterSalID int NOT NULL,
     FOREIGN KEY (TeaterSalID) REFERENCES Teatersal(TeaterSalID)
 );
@@ -35,7 +35,7 @@ CREATE TABLE Billett (
     Dato date NOT NULL,
     ForestillingID int NOT NULL,
     StolID int NOT NULL,
-    FOREIGN KEY (ForestillingID) REFERENCES Forestilling(ForestillingID)
+    FOREIGN KEY (ForestillingID) REFERENCES Forestilling(ForestillingID),
     FOREIGN KEY (StolID) REFERENCES Stol(StolID)
 );
 
@@ -66,8 +66,8 @@ CREATE TABLE Akt (
 CREATE TABLE RolleiAkt (
     AktID int,
     RolleID int,
-    FOREIGN KEY (AktID) REFERENCES Akt(AktID)
-    FOREIGN KEY (RolleID) REFERENCES Rolle(RolleID)
+    FOREIGN KEY (AktID) REFERENCES Akt(AktID),
+    FOREIGN KEY (RolleID) REFERENCES Rolle(RolleID),
     PRIMARY KEY (AktID, RolleID)
 );
 
@@ -79,7 +79,7 @@ CREATE TABLE Rolle (
 CREATE TABLE SkuespilleriRolle (
     RolleID int,
     SkuespillerID int,
-    FOREIGN KEY (RolleID) REFERENCES Rolle(RolleID)
+    FOREIGN KEY (RolleID) REFERENCES Rolle(RolleID),
     FOREIGN KEY (SkuespillerID) REFERENCES Skuespiller(SkuespillerID)
 );
 
@@ -100,8 +100,8 @@ CREATE TABLE Oppgave (
 CREATE TABLE AnsattiOppgave (
     OppgaveID int,
     AnsattID int,
-    FOREIGN KEY (OppgaveID) REFERENCES Oppgave(OppgaveID)
-    FOREIGN KEY (AnsattID) REFERENCES Ansatt(AnsattID)
+    FOREIGN KEY (OppgaveID) REFERENCES Oppgave(OppgaveID),
+    FOREIGN KEY (AnsattID) REFERENCES Ansatt(AnsattID),
     PRIMARY KEY (OppgaveID, AnsattID)
 );
 
