@@ -43,23 +43,16 @@ CREATE TABLE Stol (
     StolID int PRIMARY KEY,
     SeteNr int NOT NULL,
     RadNr int NOT NULL,
-    Omraadet varchar(255),
-    TeaterSalID int,
+    Omraadet varchar(255) NOT NULL,
+    TeaterSalID int NOT NULL,
     FOREIGN KEY (TeaterSalID) REFERENCES Teatersal(TeaterSalID)
-);
-
-CREATE TABLE KjoptBillett (
-    KundeNummer int,
-    BillettNummer int,
-    FOREIGN KEY (KundeNummer) REFERENCES Kunde(KundeNummer)
-    FOREIGN KEY (BillettNummer) REFERENCES Billett(BillettNummer)
-    PRIMARY KEY (KundeNummer, BillettNummer)
 );
 
 CREATE TABLE Kunde (
     KundeNummer int PRIMARY KEY,
-    Mobilnummer int,
+    Mobilnummer int NOT NULL,
     Navn varchar(255) NOT NULL,
+    Addresse varchar(255) NOT NULL
 );
 
 CREATE TABLE Akt (
@@ -87,7 +80,7 @@ CREATE TABLE SkuespilleriRolle (
     RolleID int,
     SkuespillerID int,
     FOREIGN KEY (RolleID) REFERENCES Rolle(RolleID)
-    FOREIGN KEY
+    FOREIGN KEY (SkuespillerID) REFERENCES Skuespiller(SkuespillerID)
 );
 
 CREATE TABLE Skuespiller (
