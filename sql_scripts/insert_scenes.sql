@@ -23,26 +23,153 @@ INSERT INTO Forestilling VALUES (9,'2024-02-12','18:30',2);
 INSERT INTO Forestilling VALUES (10,'2024-02-13','18:30',2);
 INSERT INTO Forestilling VALUES (11,'2024-02-14','18:30',2);
 
-INSERT INTO Rolle VALUES (1,'Håkon Håkonson')
-INSERT INTO Rolle VALUES (2,'Dagfinn Bonde')
-INSERT INTO Rolle VALUES (3,'Jatgeir Skald')
-INSERT INTO Rolle VALUES (4,'Sigrid')
-INSERT INTO Rolle VALUES (5,'Ingeborg')
-INSERT INTO Rolle VALUES (6,'Guttorm Ingesson')
-INSERT INTO Rolle VALUES (7,'Skule Jarl')
-INSERT INTO Rolle VALUES (8,'Inga frå Vartejg')
-INSERT INTO Rolle VALUES (9,'Paal Flida')
-INSERT INTO Rolle VALUES (10,'Ragnhild')
-INSERT INTO Rolle VALUES (11,'Gregorius Jonsson')
-INSERT INTO Rolle VALUES (12,'Margrete')
-INSERT INTO Rolle VALUES (13,'Biskop Nikolas')
-INSERT INTO Rolle VALUES (14,'Peter')
+INSERT INTO Rolle VALUES (1,'Håkon Håkonson');
+INSERT INTO Rolle VALUES (2,'Dagfinn Bonde');
+INSERT INTO Rolle VALUES (3,'Jatgeir Skald');
+INSERT INTO Rolle VALUES (4,'Sigrid');
+INSERT INTO Rolle VALUES (5,'Ingeborg');
+INSERT INTO Rolle VALUES (6,'Baard Bratte');
+INSERT INTO Rolle VALUES (7,'Skule Jarl');
+INSERT INTO Rolle VALUES (8,'Inga frå Vartejg');
+INSERT INTO Rolle VALUES (9,'Paal Flida');
+INSERT INTO Rolle VALUES (10,'Ragnhild');
+INSERT INTO Rolle VALUES (11,'Gregorius Jonsson');
+INSERT INTO Rolle VALUES (12,'Margrete');
+INSERT INTO Rolle VALUES (13,'Biskop Nikolas');
+INSERT INTO Rolle VALUES (14,'Peter');
 
-INSERT INTO Akt VALUES (1, 1, "Akt 1", 1)
-INSERT INTO Akt VALUES (2, 2, "Akt 2", 1)
-INSERT INTO Akt VALUES (3, 3, "Akt 3", 1)
-INSERT INTO Akt VALUES (4, 4, "Akt 4", 1)
-INSERT INTO Akt VALUES (5, 5, "Akt 5", 1)
+INSERT INTO Akt VALUES (1,1,'Akt 1',1);
+INSERT INTO Akt VALUES (2,2,'Akt 2',1);
+INSERT INTO Akt VALUES (3,3,'Akt 3',1);
+INSERT INTO Akt VALUES (4,4,'Akt 4',1);
+INSERT INTO Akt VALUES (5,5,'Akt 5',1);
+
+INSERT INTO RolleiAkt VALUES (2,1);
+INSERT INTO RolleiAkt VALUES (1,1);
+INSERT INTO RolleiAkt VALUES (3,1);
+INSERT INTO RolleiAkt VALUES (4,1);
+INSERT INTO RolleiAkt VALUES (5,1);
+
+INSERT INTO RolleiAkt VALUES (2,2);
+INSERT INTO RolleiAkt VALUES (1,2);
+INSERT INTO RolleiAkt VALUES (3,2);
+INSERT INTO RolleiAkt VALUES (4,2);
+INSERT INTO RolleiAkt VALUES (5,2);
+
+INSERT INTO RolleiAkt VALUES (4,3);
+
+INSERT INTO RolleiAkt VALUES (1,4);
+INSERT INTO RolleiAkt VALUES (2,4);
+INSERT INTO RolleiAkt VALUES (5,4);
+
+INSERT INTO RolleiAkt VALUES (4,5);
+
+INSERT INTO RolleiAkt VALUES (1,6);
+
+INSERT INTO RolleiAkt VALUES (1,7);
+INSERT INTO RolleiAkt VALUES (2,7);
+INSERT INTO RolleiAkt VALUES (3,7);
+INSERT INTO RolleiAkt VALUES (4,7);
+INSERT INTO RolleiAkt VALUES (5,7);
+
+INSERT INTO RolleiAkt VALUES (1,8);
+INSERT INTO RolleiAkt VALUES (3,8);
+
+INSERT INTO RolleiAkt VALUES (1,9);
+INSERT INTO RolleiAkt VALUES (2,9);
+INSERT INTO RolleiAkt VALUES (3,9);
+INSERT INTO RolleiAkt VALUES (4,9);
+INSERT INTO RolleiAkt VALUES (5,9);
+
+INSERT INTO RolleiAkt VALUES (1,10);
+INSERT INTO RolleiAkt VALUES (5,10);
+
+INSERT INTO RolleiAkt VALUES (1,11);
+INSERT INTO RolleiAkt VALUES (2,11);
+INSERT INTO RolleiAkt VALUES (3,11);
+INSERT INTO RolleiAkt VALUES (4,11);
+INSERT INTO RolleiAkt VALUES (5,11);
+
+INSERT INTO RolleiAkt VALUES (1,12);
+INSERT INTO RolleiAkt VALUES (2,12);
+INSERT INTO RolleiAkt VALUES (3,12);
+INSERT INTO RolleiAkt VALUES (4,12);
+INSERT INTO RolleiAkt VALUES (5,12);
+
+INSERT INTO RolleiAkt VALUES (1,13);
+INSERT INTO RolleiAkt VALUES (2,13);
+INSERT INTO RolleiAkt VALUES (3,13);
+
+INSERT INTO RolleiAkt VALUES (3,14);
+INSERT INTO RolleiAkt VALUES (4,14);
+INSERT INTO RolleiAkt VALUES (5,14);
+
+INSERT INTO Skuespiller VALUES(1,'Arturo Scotti','', NULL);
+INSERT INTO Skuespiller VALUES(2,'Ingunn Beate Strige Øyen','', NULL);
+INSERT INTO Skuespiller VALUES(3,'Hans Petter Nilsen','', NULL);
+INSERT INTO Skuespiller VALUES(4,'Madeleine Brandtzæg Nilsen','', NULL);
+INSERT INTO Skuespiller VALUES(5,'Synnøve Fossum Eriksen','', NULL);
+INSERT INTO Skuespiller VALUES(6,'Emma Caroline Deichmann','', NULL);
+INSERT INTO Skuespiller VALUES(7,'Thomas Jensen Takyi','', NULL);
+INSERT INTO Skuespiller VALUES(8,'Per Bogstad Gulliksen','', NULL);
+INSERT INTO Skuespiller VALUES(9,'Isak Holmen Sørensen','', NULL);
+INSERT INTO Skuespiller VALUES(10,'Fabian Heidelberg Lunde','', NULL);
+INSERT INTO Skuespiller VALUES(11,'Emil Olafsson','', NULL);
+INSERT INTO Skuespiller VALUES(12,'Snorre Ryen Tøndel','', NULL);
+
+INSERT INTO SkuespilleriRolle VALUES (1, 1);
+INSERT INTO SkuespilleriRolle VALUES (2, 11);
+INSERT INTO SkuespilleriRolle VALUES (3, 11);
+INSERT INTO SkuespilleriRolle VALUES (4, 6);
+INSERT INTO SkuespilleriRolle VALUES (5, 6);
+INSERT INTO SkuespilleriRolle VALUES (6, 10);
+INSERT INTO SkuespilleriRolle VALUES (7, 3);
+INSERT INTO SkuespilleriRolle VALUES (8, 2);
+INSERT INTO SkuespilleriRolle VALUES (9, 9);
+INSERT INTO SkuespilleriRolle VALUES (10, 4);
+INSERT INTO SkuespilleriRolle VALUES (11, 8);
+INSERT INTO SkuespilleriRolle VALUES (12, 5);
+INSERT INTO SkuespilleriRolle VALUES (13, 7);
+INSERT INTO SkuespilleriRolle VALUES (14, 12);
+
+INSERT INTO Oppgave VALUES (1,'Regisør',1);
+INSERT INTO Oppgave VALUES (2,'Musikkutvelger',1);
+INSERT INTO Oppgave VALUES (3,'Scenografi',1);
+INSERT INTO Oppgave VALUES (4,'Kostymer',1);
+INSERT INTO Oppgave VALUES (5,'Lysdesign',1);
+INSERT INTO Oppgave VALUES (6,'Dramaturg',1);
+
+INSERT INTO Oppgave VALUES (7,'Regisør',2);
+INSERT INTO Oppgave VALUES (8,'Scenografi',2);
+INSERT INTO Oppgave VALUES (9,'Kostymer',2);
+INSERT INTO Oppgave VALUES (10,'Musikalsk ansvarlig',2);
+INSERT INTO Oppgave VALUES (11,'Lysdesign',2);
+INSERT INTO Oppgave VALUES (12,'Dramaturg',2);
+
+INSERT INTO Ansatt VALUES (1,'Yury Butusov','','Fulltid');
+INSERT INTO Ansatt VALUES (2,'Aleksandr Shishkin-Hokusai','','Fulltid');
+INSERT INTO Ansatt VALUES (3,'Eivind Myren','','Fulltid');
+INSERT INTO Ansatt VALUES (4,'Mina Rype Stokke','','Fulltid');
+
+INSERT INTO Ansatt VALUES (5,'Jonas Corell Petersen','','Fulltid');
+INSERT INTO Ansatt VALUES (6,'David Gehrt','','Fulltid');
+INSERT INTO Ansatt VALUES (7,'Gaute Tønder','','Fulltid');
+INSERT INTO Ansatt VALUES (8,'Magnus Mikaelsen','','Fulltid');
+INSERT INTO Ansatt VALUES (9,'Kristoffer Spender','','Fulltid');
+
+INSERT INTO AnsattiOppgave VALUES (1,1);
+INSERT INTO AnsattiOppgave VALUES (2,1);
+INSERT INTO AnsattiOppgave VALUES (3,2);
+INSERT INTO AnsattiOppgave VALUES (4,2);
+INSERT INTO AnsattiOppgave VALUES (5,3);
+INSERT INTO AnsattiOppgave VALUES (6,4);
+
+INSERT INTO AnsattiOppgave VALUES (7,5);
+INSERT INTO AnsattiOppgave VALUES (8,6);
+INSERT INTO AnsattiOppgave VALUES (9,6);
+INSERT INTO AnsattiOppgave VALUES (10,7);
+INSERT INTO AnsattiOppgave VALUES (11,8);
+INSERT INTO AnsattiOppgave VALUES (12,9);
 
 INSERT INTO Stol VALUES (1,1,1,NULL,1);
 INSERT INTO Stol VALUES (2,2,1,NULL,1);
