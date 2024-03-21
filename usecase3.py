@@ -1,33 +1,14 @@
 import sqlite3
+# Dynamiske properties her: ForestillingID og Count.
+# the function below takes in requested vacant amount
+# and it also takes in the types of customers
+# if the sum of these customers exceed the vacant amount
+# it will not execute
+# else it tests.
 
-#forestillingen 3 februar
-#en rad med 9 ledige seter, trenger ikke å være vedsiden av hverandre.
-
-#finne denne raden. summere prisen
-
-#SELECT * FROM Stol 
-
-#SELECT * FROM Stol INNER JOIN Teatersal ON Teatersal.TeaterSalID = Stol.TeaterSalID WHERE Stol.TeaterSalID = 2;
-# the query above to select all stol from gamle scene.
-
-#SELECT * FROM Forestilling WHERE Forestilling.Dato = '2024-02-03' AND Forestilling.TeaterSalID = 2;
-# the query to select forestilling from 2024-02-03. 3rd february.
-
-# each ordinær is 350
-# they are 9 so they don't get the bundle
-
-# SELECT S.RadNr, S.Omraadet, COUNT(*) AS VacantSeats FROM Stol AS S
-# LEFT JOIN Billett AS B ON S.StolID = B.StolID AND B.ForestillingID = 6
-# WHERE B.BillettNummer IS NULL
-# GROUP BY S.RadNr, S.Omraadet
-# HAVING COUNT(*) >= 9;
-
-
-# Dynamiske properties her: Forestilling ID og Count.
 
 # show_id is the ForestillingID for a certain Show.
 # vacant_amount is the amount of requested vacant seats.
-
 def checkForVacantSeatsInRow(show_id, vacant_amount, ordi_am, honn_am, stud_am, child_am):
     prices = {
         "ordinary": 350,
