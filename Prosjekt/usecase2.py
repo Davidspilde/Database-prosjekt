@@ -52,7 +52,7 @@ with open("hovedscenen.txt", "r") as f:
                 elif(char == '1'):
                     billettID += 1
                     forestilling = cur.execute("SELECT * FROM Forestilling WHERE Dato = ? AND TeaterSalID = ?", (date,1)).fetchone()
-                    cur.execute("INSERT INTO Billett (BillettNummer, KundeType, Pris, Dato, ForestillingID, StolID) VALUES (?, ?, ?, ?, ?, ?)", (billettID,'Ordinær',450, date, 1, stolID))
+                    cur.execute("INSERT INTO Billett (BillettNummer, KundeType, Pris, Dato, ForestillingID, StolID) VALUES (?, ?, ?, ?, ?, ?)", (billettID,'Ordinær',450, date, 3, stolID))
                     cur.execute("INSERT INTO KjoptBillett (Kundenummer, BillettNummer) VALUES (?, ?)", (1, billettID))
                     con.commit()
                     stolID += 1    
@@ -93,7 +93,7 @@ with open("gamle-scene.txt", "r") as f:
                 elif(char == '1'):
                     billettID += 1
                     forestilling = cur.execute("SELECT * FROM Forestilling WHERE Dato = ? AND TeaterSalID = ?", (date,2)).fetchone()
-                    cur.execute("INSERT INTO Billett (BillettNummer, KundeType, Pris, Dato, ForestillingID, StolID) VALUES (?, ?, ?, ?, ?, ?)", (billettID,'Ordinær',450, date, 2,stolID))
+                    cur.execute("INSERT INTO Billett (BillettNummer, KundeType, Pris, Dato, ForestillingID, StolID) VALUES (?, ?, ?, ?, ?, ?)", (billettID,'Ordinær',450, date, 6,stolID))
                     cur.execute("INSERT INTO KjoptBillett (Kundenummer, BillettNummer) VALUES (?, ?)", (1, billettID))
                     con.commit()
                     stolID += 1    
