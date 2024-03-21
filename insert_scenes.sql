@@ -38,11 +38,21 @@ INSERT INTO Rolle VALUES (12,'Margrete');
 INSERT INTO Rolle VALUES (13,'Biskop Nikolas');
 INSERT INTO Rolle VALUES (14,'Peter');
 
+INSERT INTO Rolle VALUES (15,'Sunniva Du Mond Nordal');
+INSERT INTO Rolle VALUES (16,'Jo Saberniak');
+INSERT INTO Rolle VALUES (17,'Marte M.Steinholt');
+INSERT INTO Rolle VALUES (18,'Tor Ivar Hagen');
+INSERT INTO Rolle VALUES (19,'Trond-Ove Skørdal');
+INSERT INTO Rolle VALUES (20,'Natalie Grøndahl Tangen');
+INSERT INTO Rolle VALUES (21,'Åsmund Flaten');
+
 INSERT INTO Akt VALUES (1,1,'Akt 1',1);
 INSERT INTO Akt VALUES (2,2,'Akt 2',1);
 INSERT INTO Akt VALUES (3,3,'Akt 3',1);
 INSERT INTO Akt VALUES (4,4,'Akt 4',1);
 INSERT INTO Akt VALUES (5,5,'Akt 5',1);
+
+INSERT INTO Akt VALUES (6,1,'Akt 1',2);
 
 INSERT INTO RolleiAkt VALUES (2,1);
 INSERT INTO RolleiAkt VALUES (1,1);
@@ -104,18 +114,42 @@ INSERT INTO RolleiAkt VALUES (3,14);
 INSERT INTO RolleiAkt VALUES (4,14);
 INSERT INTO RolleiAkt VALUES (5,14);
 
-INSERT INTO Skuespiller VALUES(1,'Arturo Scotti','', 'Parkett');
-INSERT INTO Skuespiller VALUES(2,'Ingunn Beate Strige Øyen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(3,'Hans Petter Nilsen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(4,'Madeleine Brandtzæg Nilsen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(5,'Synnøve Fossum Eriksen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(6,'Emma Caroline Deichmann','', 'Parkett');
-INSERT INTO Skuespiller VALUES(7,'Thomas Jensen Takyi','', 'Parkett');
-INSERT INTO Skuespiller VALUES(8,'Per Bogstad Gulliksen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(9,'Isak Holmen Sørensen','', 'Parkett');
-INSERT INTO Skuespiller VALUES(10,'Fabian Heidelberg Lunde','', 'Parkett');
-INSERT INTO Skuespiller VALUES(11,'Emil Olafsson','', 'Parkett');
-INSERT INTO Skuespiller VALUES(12,'Snorre Ryen Tøndel','', 'Parkett');
+INSERT INTO RolleiAkt VALUES (6,15);
+INSERT INTO RolleiAkt VALUES (6,16);
+INSERT INTO RolleiAkt VALUES (6,17);
+INSERT INTO RolleiAkt VALUES (6,18);
+INSERT INTO RolleiAkt VALUES (6,19);
+INSERT INTO RolleiAkt VALUES (6,20);
+INSERT INTO RolleiAkt VALUES (6,21);
+
+INSERT INTO Skuespiller VALUES(1,'Arturo Scotti','', '');
+INSERT INTO Skuespiller VALUES(2,'Ingunn Beate Strige Øyen','', '');
+INSERT INTO Skuespiller VALUES(3,'Hans Petter Nilsen','', '');
+INSERT INTO Skuespiller VALUES(4,'Madeleine Brandtzæg Nilsen','', '');
+INSERT INTO Skuespiller VALUES(5,'Synnøve Fossum Eriksen','', '');
+INSERT INTO Skuespiller VALUES(6,'Emma Caroline Deichmann','', '');
+INSERT INTO Skuespiller VALUES(7,'Thomas Jensen Takyi','', '');
+INSERT INTO Skuespiller VALUES(8,'Per Bogstad Gulliksen','', '');
+INSERT INTO Skuespiller VALUES(9,'Isak Holmen Sørensen','', '');
+INSERT INTO Skuespiller VALUES(10,'Fabian Heidelberg Lunde','', '');
+INSERT INTO Skuespiller VALUES(11,'Emil Olafsson','', '');
+INSERT INTO Skuespiller VALUES(12,'Snorre Ryen Tøndel','', '');
+
+INSERT INTO Skuespiller VALUES (13,'Sunniva Du Mond Nordal','','');
+INSERT INTO Skuespiller VALUES (14,'Jo Saberniak','','');
+INSERT INTO Skuespiller VALUES (15,'Marte M.Steinholt','','');
+INSERT INTO Skuespiller VALUES (16,'Tor Ivar Hagen','','');
+INSERT INTO Skuespiller VALUES (17,'Trond-Ove Skørdal','','');
+INSERT INTO Skuespiller VALUES (18,'Natalie Grøndahl Tangen','','');
+INSERT INTO Skuespiller VALUES (19,'Åsmund Flaten','','');
+
+INSERT INTO SkuespilleriRolle VALUES (15,13);
+INSERT INTO SkuespilleriRolle VALUES (16,14);
+INSERT INTO SkuespilleriRolle VALUES (17,15);
+INSERT INTO SkuespilleriRolle VALUES (18,16);
+INSERT INTO SkuespilleriRolle VALUES (19,17);
+INSERT INTO SkuespilleriRolle VALUES (20,18);
+INSERT INTO SkuespilleriRolle VALUES (21,19);
 
 INSERT INTO SkuespilleriRolle VALUES (1, 1);
 INSERT INTO SkuespilleriRolle VALUES (2, 11);
