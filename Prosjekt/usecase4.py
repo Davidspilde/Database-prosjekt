@@ -2,7 +2,7 @@ import sqlite3
 
 date = input("Format (yyyy-mm-dd): ")
 
-conn = sqlite3.connect('testdb.db')
+conn = sqlite3.connect('teater.db')
 cursor = conn.cursor()
 
 query = ("SELECT F.ForestillingID, F.Dato, Teaterstykke.StykkeNavn, COUNT(B.BillettNummer) AS BilletterSolgt FROM Forestilling AS F " +

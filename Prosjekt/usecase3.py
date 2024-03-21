@@ -42,8 +42,8 @@ def checkForVacantSeatsInRow(show_id, vacant_amount, ordi_am, honn_am, stud_am, 
         return "There are no vacant seats"
     
 
-conn = sqlite3.connect('testdb.db')
+conn = sqlite3.connect('teater.db')
 
-print(checkForVacantSeatsInRow(6, 9, 9, 0, 0, 0))
+print(checkForVacantSeatsInRow(6, 9, 9, 0, 0, 0),"kr")
 
 conn.close()
