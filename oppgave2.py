@@ -31,5 +31,7 @@ with open("gamle-scene.txt", "r") as f:
         places.append(val1)
     con = sqlite3.connect("teater.db")
     cur = con.cursor()
-    for i in range(len(places)):
-        cur.execute('''UPDATE ''')
+    # for i in range(len(places)):
+    #     cur.execute('''UPDATE ''')
+
+print(places)
