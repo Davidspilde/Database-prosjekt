@@ -47,6 +47,13 @@ CREATE TABLE Stol (
     TeaterSalID int NOT NULL,
     FOREIGN KEY (TeaterSalID) REFERENCES Teatersal(TeaterSalID)
 );
+CREATE TABLE KjoptBillett (
+    KundeNummer int,
+    BillettNummer int,
+    FOREIGN KEY (KundeNummer) REFERENCES Kunde(KundeNummer),
+    FOREIGN KEY (BillettNummer) REFERENCES Billett(BillettNummer),
+    PRIMARY KEY (KundeNummer, BillettNummer)
+);
 
 CREATE TABLE Kunde (
     KundeNummer int PRIMARY KEY,
