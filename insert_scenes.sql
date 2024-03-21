@@ -171,6 +171,8 @@ INSERT INTO AnsattiOppgave VALUES (10,7);
 INSERT INTO AnsattiOppgave VALUES (11,8);
 INSERT INTO AnsattiOppgave VALUES (12,9);
 
+INSERT INTO Kunde VALUES (1,99999999,'Geir Åre','Høgskoleringen 1');
+
 INSERT INTO Stol VALUES (1,1,1,'Parkett',1);
 INSERT INTO Stol VALUES (2,2,1,'Parkett',1);
 INSERT INTO Stol VALUES (3,3,1,'Parkett',1);
